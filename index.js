@@ -1,6 +1,10 @@
 // CTF - SQL Injection no Login
 // Tecnologias: Node.js, Express, SQLite
 
+//Existem N maneiras de explorar a vulnerabilidade desta aplicação, para 
+// conseguir logar sem a senha primeiro eu coloquei um ' OR' 1 '=' 1 e descobri todos os usuarios, em seguida 
+// coloquei 'admin-- assim comentei o restante do código e ignorou a validação de senha
+
 const express = require('express');
 const sqlite3 = require('sqlite3').verbose();
 const bodyParser = require('body-parser');
